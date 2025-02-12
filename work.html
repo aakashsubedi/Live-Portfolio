@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Work With Me</title>
+   <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #031525;
+            padding: 10px 20px;
+            color: aqua;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+        }
+        .navbar a{
+            text-decoration: none;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: aqua;
+            text-decoration: none;
+        }
+
+
+        /* Header Styles */
+        .first-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: white;
+            margin: 0;
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
+
+        .background-circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.5;
+            filter: blur(100px);
+        }
+
+        .circle-purple {
+            width: 256px;
+            height: 256px;
+            background-color: #d6bcfa;
+            top: 25%;
+            left: 25%;
+        }
+
+        .circle-blue {
+            width: 256px;
+            height: 256px;
+            background-color: #a0c4ff;
+            bottom: 25%;
+            right: 25%;
+        }
+
+        .content {
+            text-align: center;
+            z-index: 1;
+        }
+
+        .content p {
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .content p:last-of-type {
+            font-size: 1.125rem;
+            color: #4b5563;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .animated-heading {
+            font-size: 2.5rem;
+            animation: fadeInLeft 1.5s ease-in-out;
+        }
+
+        .animated-text {
+            font-size: 1.2rem;
+            animation: fadeInRight 1.5s ease-in-out;
+            margin: 20px 0;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #CCE7FF;
+            text-align: center;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            animation: fadeInUp 1.5s ease-in-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .process {
+            padding: 80px 0;
+            background: #a6c1ee;
+            text-align: center;
+        }
+        
+        .process-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1F2937;
+        }
+
+        .process-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 16px;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            transition: background-color 0.3s ease;
+        }
+
+        .process-item:hover {
+            background-color: #E5E7EB;
+        }
+
+        .number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #446ba5;
+        }
+
+        .process-item:hover .number {
+            color: #000000;
+        }
+
+        .ml-4 {
+            margin-left: 16px;
+        }
+
+        .title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1F2937;
+        }
+
+        .process-item:hover .title {
+            color: #1F2937;
+        }
+
+        .description {
+            color: #4B5563;
+        }
+
+        .process-item:hover .description {
+            color: #6B7280;
+        }
+
+        .mt-10 {
+            margin-top: 40px;
+        }
+
+        .space-y-8>*:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+        /* Contact Section */
+        .c-container {
+            background-color: #CCE7FF;
+            padding: 6rem;
+            border-radius: 2.5rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .c-container h2 {
+            text-align: center;
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+
+        .c-container h1 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+
+        .c-container p {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+        }
+
+        .c-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .c-container form .input-group {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .c-container form input,
+        .c-container form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 1.375rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .c-container form input:focus,
+        .c-container form textarea:focus {
+            border-color: #2563eb;
+        }
+
+        .c-container form textarea {
+            resize: none;
+            height: 150px;
+        }
+
+        .c-container form button {
+            padding: 0.75rem;
+            background: linear-gradient(to right, #7c3aed, #2563eb);
+            color: #ffffff;
+            border: none;
+            border-radius: 0.375rem;
+            font-weight: bold;
+            font-size: large;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .c-container form button:hover {
+            background: linear-gradient(to right, #6d28d9, #1d4ed8);
+        }
+
+        .c-container .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            color: #6b7280;
+        }
+
+        .c-container .info div {
+            text-align: center;
+        }
+
+        .c-container .info div p {
+            margin: 0.25rem 0;
+        }
+
+        .c-container .info div p:first-child {
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1c2c46;
+            color: #fff;
+            padding: 30px 0;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .footercontainer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .page-header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            position: relative;
+        }
+
+        .logo a {
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: var(--common-white);
+        }
+
+        .logo a span {
+            color: var(--primary-color);
+        }
+
+        .back {
+            color: #FFFFFF;
+            background: linear-gradient(to right, #7c3aed, #2563eb);
+            cursor: pointer;
+            border-radius: 0.375rem;
+            border: none;
+            margin-top: 5px;
+            padding: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">
+        <div class="logo">Aakash</div>
+    </a>
+    </nav>
+
+
+    <!-- Header Section -->
+    <div class="first-page">
+        <div class="background-circle circle-purple"></div>
+        <div class="background-circle circle-blue"></div>
+        <div class="content">
+            <p>Let's Create Something Amazing Together</p>
+            <h1>Work With Me</h1>
+            <p>Transform your vision into reality with cutting-edge design and development solutions.</p>
+            <p style="margin-top: 50px;"> Scroll Down For More <i class="fa-solid fa-arrow-down"></i></p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="animated-heading">Services I Offer</h2>
+            <div class="service-cards">
+                <div class="card animated-card">
+                    <h3>Web Design</h3>
+                    <p>Stunning, user-friendly designs tailored to your brand.</p>
+                </div>
+                <div class="card animated-card">
+                    <h3>Web Development</h3>
+                    <p>Robust and scalable websites built with modern technologies.</p>
+                </div>
+                <div class="card animated-card">
+                    <h3>Consulting</h3>
+                    <p>Strategic guidance to maximize your digital presence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="process-container">
+            <h1> Process</h1>
+            <div class="mt-10 space-y-8">
+                <div class="process-item">
+                    <div class="number">01</div>
+                    <div class="ml-4">
+                        <h2 class="title">Discovery</h2>
+                        <p class="description">Understanding your goals and vision</p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="number">02</div>
+                    <div class="ml-4">
+                        <h2 class="title">Strategy</h2>
+                        <p class="description">Developing a comprehensive plan</p>
+                    </div>
+                </div>
+                <div class="process-item">
+                    <div class="number">03</div>
+                    <div class="ml-4">
+                        <h2 class="title">Execution</h2>
+                        <p class="description">Bringing the vision to life</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="c-container">
+            <h2>Ready to Start?</h2>
+            <h1>Get in Touch</h1>
+            <p>Let's turn your ideas into reality</p>
+            <form>
+                <div class="input-group">
+                    <input placeholder="Name" type="text" required>
+                    <input placeholder="Email" type="email" required>
+                </div>
+                <textarea placeholder="Tell me about your project..." required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="info">
+                <div>
+                    <p>Email</p>
+                    <p>aakkashsubedi@gmail.com</p>
+                </div>
+                <div>
+                    <p>Location</p>
+                    <p>Worldwide</p>
+                </div>
+                <div>
+                    <p>Response Time</p>
+                    <p>2-8 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footercontainer">
+            <div class="copyright">
+                &copy; 2025 Aakash Subedi. All rights reserved.
+            </div>
+            <a href="index.html">
+            <button class="back"> Back to home</button>
+        </a>
+        </div>
+    </footer>
+
+    <script>
+        // Add scroll animations
+        document.addEventListener('scroll', () => {
+            const elements = document.querySelectorAll('.animated-card');
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
