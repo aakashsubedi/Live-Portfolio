@@ -10,6 +10,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
 
 <body>
@@ -54,9 +56,9 @@
             <div class="detail">
                 <h3>Hi, I'm</h3>
                 <h1><span style="color:#00E8F8;">Aakash Subedi</span></h1>
-                <p class="intro-text">'I'm Creative Web Developer and Designer from Chitwan, Nepal working in web
+                <p class="first-intro-text">'I'm Creative Web Developer and Designer from Chitwan, Nepal working in web
                     development. I enjoy turning complex problems into simple, beautiful and intuitive designs.</p>
-                <p class="intro-text">My aim is to bring across your message and identity in the most creative way.</p>
+                <p class="first-intro-text">My aim is to bring across your message and identity in the most creative way.</p>
                 <div class="social">
                     <a href="https://github.com/aakashsubedi" target="_blank" title="Github"><i
                             class="bi bi-github"></i></a>
@@ -89,7 +91,8 @@
             <div class="abt-header" data-aos="fade-up">
                 <div class="text-center">
                     <button class="abt-button">About</button>
-                </div>                <h2 class="abt-title">Crafting Digital Experiences</h2>
+                </div>                
+                <h2 class="abt-title">Crafting Digital Experiences</h2>
                 <p class="abt-subtitle">Transforming ideas into exceptional digital solutions with creativity and technical precision</p>
             </div>
             
@@ -677,94 +680,72 @@
     <!-- Testimonial end -->
 
     <!-- contactMe -->
+   
     <section class="contact-section" id="contact">
         <div class="text-center">
-            <button class="abt-button" style="margin-top: 100px;">Contact Me</button>
+            <button class="abt-button">Contact Me</button>
         </div>
-        <div class="container">
+        <div class="contact-container">
             <div class="header">
-                <h2><span style="color:#00E8F8;">Get in Touch</span></h2>
+                <h2><span class="accent-text">Get in Touch</span></h2>
             </div>
-            <div class="content">
+            <div class="contact-content">
                 <div class="contact-info">
-                    <div class="info-card">
+                    <div class="contact-info-card">
                         <div class="icon-wrapper">
-                            <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                                width="24">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div>
                             <h3>Location</h3>
-                            <p style="color: rgba(255,255,255,0.6)">Chitwan, Nepal</p>
+                            <p class="muted-text">Chitwan, Nepal</p>
                         </div>
                     </div>
 
-                    <div class="info-card">
+                    <div class="contact-info-card">
                         <div class="icon-wrapper">
-                            <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                                width="24">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                </path>
-                            </svg>
+                            <i class="fas fa-phone"></i>
                         </div>
                         <div>
                             <h3>Phone</h3>
-                            <p style="color: rgba(255,255,255,0.6)">+977 9804131198</p>
+                            <p class="muted-text">+977 9804131198</p>
                         </div>
                     </div>
 
-                    <div class="info-card">
+                    <div class="contact-info-card">
                         <div class="icon-wrapper">
-                            <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                                width="24">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                </path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
+                            <i class="fas fa-envelope"></i>
                         </div>
                         <div>
                             <h3>Email</h3>
-                            <p style="color: rgba(255,255,255,0.6)">aakkashsubedi@gmail.com</p>
+                            <p class="muted-text">aakkashsubedi@gmail.com</p>
                         </div>
                     </div>
 
-
-                    <div class="info-card">
-                        <div class="social-icon-wrapper">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="social-wrapper">
-
-                                <div class="social-button">
-                                    <div class="social-icon">
-                                        <a href="https://www.linkedin.com/in/aakashsubedi" target="_blank"><i
-                                                class="fab fa-linkedin" style="color: white;"></i></a>
-                                    </div>
-                                    <span>Linkedin</span>
+                    <div class="contact-info-card">
+                        <div class="social-wrapper">
+                            <div class="social-button">
+                                <div class="social-icon">
+                                    <a href="https://www.linkedin.com/in/aakashsubedi" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
                                 </div>
-                                <div class="social-button">
-                                    <div class="social-icon">
-                                        <a href="https://github.com/aakashsubedi" target="_blank"
-                                            title="Aakash Subedi's Github Page"><i class="fab fa-github"
-                                                style="color: white;"></i></a>
-
-                                    </div>
-                                    <span>Github</span>
+                                <span>Linkedin</span>
+                            </div>
+                            <div class="social-button">
+                                <div class="social-icon">
+                                    <a href="https://github.com/aakashsubedi" target="_blank" title="Aakash Subedi's Github Page">
+                                        <i class="fab fa-github"></i>
+                                    </a>
                                 </div>
-                                <div class="social-button">
-                                    <div class="social-icon">
-                                        <a href="https://www.instagram.com/aakashsubedi_" target="_blank"> <i
-                                                class="fab fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
-                                    </div>
-                                    <span>Instagram</span>
+                                <span>Github</span>
+                            </div>
+                            <div class="social-button">
+                                <div class="social-icon">
+                                    <a href="https://www.instagram.com/aakashsubedi_" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
                                 </div>
+                                <span>Instagram</span>
                             </div>
                         </div>
                     </div>
@@ -793,10 +774,6 @@
                     </form>
                 </div>
             </div>
-
-            <!-- Success message -->
-            <div class="success-message">Message sent successfully!</div>
-        </div>
         </div>
     </section>
     <!-- contactMe end -->
@@ -1201,15 +1178,82 @@ counterObserver.observe(document.querySelector('.abt-stats-container'));
 
 
         // contact
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const successMessage = document.querySelector('.success-message');
-            successMessage.style.display = 'block';
-            setTimeout(() => {
-                successMessage.style.display = 'none';
-            }, 3000);
-            this.reset();
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Validate form
+        if (!name || !email || !subject || !message) {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Please fill in all fields',
+                icon: 'error',
+                confirmButtonColor: '#00E8F8'
+            });
+            return;
+        }
+        
+        // Show loading state
+        Swal.fire({
+            title: 'Sending...',
+            text: 'Please wait while we send your message',
+            icon: 'info',
+            showConfirmButton: false,
+            allowOutsideClick: false,
+            didOpen: () => {
+                Swal.showLoading();
+            }
         });
+        
+        // Actual form submission using Fetch API
+        fetch('your-api-endpoint', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name,
+                email,
+                subject,
+                message
+            })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Your message has been sent successfully',
+                icon: 'success',
+                confirmButtonColor: '#00E8F8',
+                confirmButtonText: 'Great!'
+            });
+            contactForm.reset();
+        })
+        .catch(error => {
+            Swal.fire({
+                title: 'Error!',
+                text: 'There was an error sending your message. Please try again.',
+                icon: 'error',
+                confirmButtonColor: '#00E8F8'
+            });
+        });
+    });
+});
+
         // contact ends
 
     </script>
