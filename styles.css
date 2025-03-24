@@ -806,7 +806,7 @@ button {
     width: 50%;
     /* Each testimonial takes half of the wrapper */
     overflow: hidden;
-    background: linear-gradient(to right, #4361ee, #6366f1);
+    background: #0f0e47;
     flex-shrink: 0;
 }
 
